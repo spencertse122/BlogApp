@@ -146,12 +146,12 @@ AUTHENTICATION_BACKENDS = [
 
 SITE_ID = 1
 LOGIN_REDIRECT_URL = '/'
-LOGOUT_REDIRECT_URL = '/'
+# LOGOUT_REDIRECT_URL = '/'
 
-# Additional configuration settings 
-SOCIALACCOUNT_QUERY_EMAIL = True 
-ACCOUNT_LOGOUT_ON_GET = True 
-ACCOUNT_UNIQUE_EMAIL = True 
+# Additional configuration settings
+SOCIALACCOUNT_QUERY_EMAIL = True
+ACCOUNT_LOGOUT_ON_GET= True
+ACCOUNT_UNIQUE_EMAIL = True
 ACCOUNT_EMAIL_REQUIRED = True 
 
 # Enable email scope to receive user's email addresses 
