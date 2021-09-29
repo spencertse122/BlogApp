@@ -149,20 +149,12 @@ SITE_ID = 1
 LOGIN_REDIRECT_URL = '/'
 # LOGOUT_÷REDIREC÷T_URL = '/'
 
-<<<<<<< HEAD
 
-# Additional configuration settings 
-SOCIALACCOUNT_QUERY_EMAIL = True
-ACCOUNT_LOGOUT_ON_GET = True
-ACCOUNT_UNIQUE_EMAIL = True
-ACCOUNT_EMAIL_REQUIRED = True
-=======
 # Additional configuration settings
 SOCIALACCOUNT_QUERY_EMAIL = True
 ACCOUNT_LOGOUT_ON_GET= True
 ACCOUNT_UNIQUE_EMAIL = True
 ACCOUNT_EMAIL_REQUIRED = True 
->>>>>>> a4ecaf90bb115c4ec6f227ceb4238e949b45ab73
 
 # Enable email scope to receive user's email addresses 
 SOCIALACCOUNT_PROVIDERS = {
