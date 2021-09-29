@@ -15,10 +15,10 @@ Including another URLconf
 """
 # from django.contrib import admin
 from .admin import admin
-from django.urls import path, include
+from django.urls import path, include, re_path
 
 urlpatterns = [
     path('', include('xanga.urls')),
     path('admin/', admin.site.urls),
-    path(r'^accounts/', include('allauth.urls'))
+    re_path(r'^accounts/', include('allauth.urls'))
 ]   

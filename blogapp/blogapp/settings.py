@@ -63,7 +63,7 @@ ROOT_URLCONF = 'blogapp.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['BASE_DIR/ templates/'],
+        'DIRS': [BASE_DIR/ 'templates/'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -147,7 +147,7 @@ AUTHENTICATION_BACKENDS = [
 
 SITE_ID = 1
 LOGIN_REDIRECT_URL = '/'
-# LOGOUT_÷REDIREC÷T_URL = '/'
+LOGOUT_REDIRECT_URL = '/'
 
 
 # Additional configuration settings
