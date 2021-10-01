@@ -45,7 +45,8 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
-    'allauth.socialaccount.providers.google', # this is specifically for google login
+    'allauth.socialaccount.providers.google',
+    'allauth.socialaccount.providers.facebook', # this is specifically for google login
 ]
 
 MIDDLEWARE = [
@@ -155,6 +156,12 @@ SOCIALACCOUNT_QUERY_EMAIL = True
 ACCOUNT_LOGOUT_ON_GET= True
 ACCOUNT_UNIQUE_EMAIL = True
 ACCOUNT_EMAIL_REQUIRED = True 
+ACCOUNT_EMAIL_CONFIRMATION_EXPIRE_DAYS=7
+ACCOUNT_EMAIL_VERIFICATION = "mandatory"
+
+SOCIALACCOUNT_QUERY_EMAIL = ACCOUNT_EMAIL_REQUIRED
+SOCIALACCOUNT_EMAIL_REQUIRED=ACCOUNT_EMAIL_REQUIRED
+
 
 # Enable email scope to receive user's email addresses 
 SOCIALACCOUNT_PROVIDERS = {
@@ -168,4 +175,9 @@ SOCIALACCOUNT_PROVIDERS = {
         }
     }
 }
+
+# # Account forms setting
+# ACCOUNT_FORMS = {
+#     'signup': 'blogapp.forms.CustomSignupForm',
+# }
 
